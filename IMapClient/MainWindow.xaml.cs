@@ -13,14 +13,14 @@ namespace IMapClient
         string myEmailAddress;
         string accountPassword;
         private ImapClient client = new();
-
+        
         public MainWindow(string login, string pass)
         {
             InitializeComponent();
             myEmailAddress = login;
             accountPassword = pass;
         }
-
+         
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             try
